@@ -18,7 +18,12 @@ header {
     justify-content: space-between;
     align-items: center;
     margin:5px;
-    display:inline-block;
+}
+
+.logoForm {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo img{
@@ -31,26 +36,30 @@ header {
 
 .form {
     display:flex;
-    width:80%;
-    align-items:center;
-    margin:auto;
-    border: solid red;
-}
-
-.barra-buscadora {
-    width:50%;
+    width: 50%;
     height:100%;
+    margin: 0px 5px;
+    align-items:center;   
 }
 
-.input,
+input {
+    background-color:#ebebeb;
+    padding:2px;
+    border:solid 1px #666;
+    border-radius: 5px;
+}
 .submit i{
     background-color:#ebebeb;
     padding:2px;
-    border:1px solid #666;
+    
 }
 
-.input {
+input {
     width:100%;
+}
+
+.submit {
+    margin:-20px;
 }
 
 a{
@@ -183,7 +192,8 @@ footer i {
 
 @media (min-width:361px){
     .descripcion {
-        display:block;}
+        display:block;
+    }
       .imagen-producto,
        .articulo {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -199,9 +209,14 @@ footer i {
     justify-content:space-between;
 }
 
+.form {
+    width:40%;
+}
+
 .primera-barra {
     display:flex;
-    width:65%;
+    width:50%;
+    flex-wrap: nowrap;
 }
 .primera-barra ul {
     display:flex;
@@ -211,8 +226,13 @@ ul li{
 padding: 2px;
 }
 
+.segunda-barra {
+    justify-content:right;
+}
+
 .segunda-barra ul {
         display:flex;
+        flex-wrap:wrap;
       }
 
       .segunda-barra ul li {
