@@ -45,17 +45,13 @@ header {
 input {
     background-color:#ebebeb;
     padding:2px;
-    border:solid 1px #666;
     border-radius: 5px;
+    width:100%;
 }
 .submit i{
     background-color:#ebebeb;
     padding:2px;
     
-}
-
-input {
-    width:100%;
 }
 
 .submit {
@@ -199,18 +195,31 @@ footer i {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
        }
 
-       .h3 {
-        align-items: right;
-        text-align: right;
-       }
+       .header-principal {
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+      }
+
+.form {
+    width:40%;
+}
+
+input {
+    background-color:#ebebeb;
+    padding:2px;
+    border:solid 1px #666;
+    border-radius: 5px;
+}
+
+.compras h3{
+    text-align: right;
+    width:100%;
+}
 
 .barra-navegacion {
     display:flex;
     justify-content:space-between;
-}
-
-.form {
-    width:40%;
 }
 
 .primera-barra {
@@ -241,14 +250,6 @@ padding: 2px;
 
       .burger-menu {
         display:none;
-      }
-
-      .header-principal {
-        display:flex;
-      }
-      .header-principal {
-        align-items:center;
-        justify-content:space-between;
       }
 
       .box-productos {
