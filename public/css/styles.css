@@ -68,7 +68,7 @@ a{
     display:none;
 }
 
-.segunda-barra li {
+.segunda-barra {
     display:none;
 }
 
@@ -219,30 +219,35 @@ input {
 
 .barra-navegacion {
     display:flex;
-    justify-content:space-between;
+    width:100%;
 }
 
 .primera-barra {
+    justify-content:center;
     display:flex;
-    width:50%;
-    flex-wrap: nowrap;
+    flex-wrap:wrap;
 }
-.primera-barra ul {
+/* .primera-barra ul {
     display:flex;
-}
+} */
 
 ul li{
-padding: 2px;
+padding: 5px;
+text-decoration: none;
+list-style: none;
 }
 
 .segunda-barra {
-    justify-content:right;
+    justify-content:center;
+    display:flex;
+    flex-wrap:wrap;
 }
 
-.segunda-barra ul {
-        display:flex;
-        flex-wrap:wrap;
-      }
+nav {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    width:100%;
+}
 
       .segunda-barra ul li {
         display:block;
