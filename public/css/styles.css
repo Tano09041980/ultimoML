@@ -1,0 +1,275 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size:12px;
+    background-color: #EBEBEB;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.header-principal {
+    justify-content: space-between;
+    align-items: center;
+    margin:5px;
+    display:inline-block;
+}
+
+.logo img{
+    width:100%
+}
+
+.logo {
+    width:50%;
+}
+
+.form {
+    display:flex;
+    width:80%;
+    align-items:center;
+    margin:auto;
+    border: solid red;
+}
+
+.barra-buscadora {
+    width:50%;
+    height:100%;
+}
+
+.input,
+.submit i{
+    background-color:#ebebeb;
+    padding:2px;
+    border:1px solid #666;
+}
+
+.input {
+    width:100%;
+}
+
+a{
+    list-style-type:none;
+    text-decoration: none;
+    color:black;
+}
+
+.primera-barra {
+    display:none;
+}
+
+.segunda-barra li {
+    display:none;
+}
+
+
+.burger-menu i {
+    color:#FFF;
+    border-radius:5px;
+    background-color:#1259c3;
+    margin:5px 170px;
+    padding:5px;
+    width:20px;
+    text-align: center;
+}
+
+.burger-menu {
+    text-align: center;  
+}
+
+.banner img {
+    width:100%;
+}
+
+main {
+    width:90%;
+    text-align:center;
+    margin:auto;
+    background-color: #EBEBEB;
+}
+
+h2 {
+    font-size:24px;
+}
+
+.compras h3 {
+    display:flex;
+    justify-content:center;
+}
+
+
+.imagen-producto img{
+    width:100%;
+}
+
+.producto {
+    margin:5px 10px 5px 10px;
+}
+
+.articulo {
+border: solid 1px #ebebeb;
+text-align:left;
+background-color: #fafafa;
+position:relative;
+}
+
+.articulo i {
+display: block;
+color:#39b54a;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+}
+
+.precio-descuento {
+margin:15px;
+}
+
+
+.precio {
+    font-size: 18px;
+    width:30%;
+}
+
+.descuento {
+    font-size: 16px;
+    color:#39b54a;
+    width:70%;
+}
+
+.descripcion {
+    font-size: 16px;
+    margin:15px;
+    display:none;
+    color:#666;
+}
+
+.precio-descuento {
+    display:flex;
+}
+
+footer {
+    text-align:center;
+    color:#666;
+}
+
+footer p{
+    margin: 10px;
+}
+
+footer i {
+    color: #1259c3;
+    text-align: center;
+    font-size:2em;
+    margin-bottom:10px;
+}
+
+.copyright {
+    text-align: left;
+    margin-bottom:2px;
+}
+
+@media (min-width:361px){
+    .descripcion {
+        display:block;}
+      .imagen-producto,
+       .articulo {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+       }
+
+       .h3 {
+        align-items: right;
+        text-align: right;
+       }
+
+.barra-navegacion {
+    display:flex;
+    justify-content:space-between;
+}
+
+.primera-barra {
+    display:flex;
+    width:65%;
+}
+.primera-barra ul {
+    display:flex;
+}
+
+ul li{
+padding: 2px;
+}
+
+.segunda-barra ul {
+        display:flex;
+      }
+
+      .segunda-barra ul li {
+        display:block;
+      }
+
+      .burger-menu {
+        display:none;
+      }
+
+      .header-principal {
+        display:flex;
+      }
+      .header-principal {
+        align-items:center;
+        justify-content:space-between;
+      }
+
+      .box-productos {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        align-items:flex-start;
+      }
+
+      .producto {
+        width:42%;
+}
+
+.precio {
+    width:75%;
+}
+
+.descuento {
+    width:20%;
+}
+}
+
+@media (min-width:769px) {
+
+.form {
+    width:40vw;
+}
+
+     .producto {
+        width:22%;
+     }
+
+     .precio {
+        width:70%;
+     }
+
+     .descuento {
+        width: 30%;
+     }
+
+    }
+       
+
+
