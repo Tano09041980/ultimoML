@@ -44,9 +44,10 @@ header {
 
 input {
     background-color:#ebebeb;
-    padding:2px;
+    padding:10px;
     border-radius: 5px;
     width:100%;
+    border:none;
 }
 .submit i{
     background-color:#ebebeb;
@@ -96,6 +97,65 @@ main {
     text-align:center;
     margin:auto;
     background-color: #EBEBEB;
+}
+
+form {
+padding:15px;
+margin:auto;
+background-color: #666;
+color:#ebebeb;
+width:50%;
+border-radius: 10px;
+}
+
+form label {   
+padding:3px;
+text-align: left;
+margin-top: 10px;
+}
+
+form input {
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+.foto {
+    margin-top: 10px;
+}
+
+.comprarVender {
+display:flex;
+align-items:center;
+justify-content: center;
+margin:auto; 
+}
+
+.comprador {
+    margin:10px 0px 10px 50px;
+}
+
+.vendedor {
+    margin:10px 50px 10px 0px;
+}
+
+
+form input {
+    margin:3px;
+    padding:7px;
+}
+
+.botones {
+    width:100%;
+}
+
+.enviar,
+.borrar {
+    background-color: #1259c3;
+    color:#EBEBEB;
+    border-radius: 10px;
+    border:none;
+    padding:7px;
+    width:40%;
 }
 
 h2 {
@@ -168,6 +228,7 @@ margin:15px;
 footer {
     text-align:center;
     color:#666;
+    margin-top: 10px;
 }
 
 footer p{
@@ -187,9 +248,7 @@ footer i {
 }
 
 @media (min-width:361px){
-    .descripcion {
-        display:block;
-    }
+  
       .imagen-producto,
        .articulo {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -203,13 +262,15 @@ footer i {
 
 .form {
     width:40%;
+    margin-left: 3%;
 }
 
 input {
     background-color:#ebebeb;
-    padding:2px;
+    padding:10px;
     border:solid 1px #666;
     border-radius: 5px;
+    border:none;
 }
 
 .compras h3{
@@ -227,9 +288,6 @@ input {
     display:flex;
     flex-wrap:wrap;
 }
-/* .primera-barra ul {
-    display:flex;
-} */
 
 ul li{
 padding: 5px;
@@ -275,6 +333,7 @@ nav {
 .descuento {
     width:20%;
 }
+
 }
 
 @media (min-width:769px) {
@@ -294,6 +353,43 @@ nav {
      .descuento {
         width: 30%;
      }
+     .producto:hover .imagen-producto {
+        box-shadow: 0px 0px 30px rgb(100 100 100);
+        transition:all 750ms;
+         }
+    
+    .producto:hover .articulo{
+            box-shadow: 0px 0px 30px rgb(100 100 100);
+            transition:all 750ms;
+    
+    }
+
+.producto:hover .descripcion{
+    display:block;
+    transition:all 1s;
+}
+
+.articulo i:hover {
+    transform: rotate(-90deg);
+    transition:0.75s;
+}
+
+.enviar:hover {
+    background-color: #0022AA;
+    transition:0.75s;
+}
+
+.del-footer {
+    display:flex;
+}
+
+footer i:hover {
+    color:#0022AA;
+}
+
+footer {
+    margin-top:30px;
+}
 
     }
        
